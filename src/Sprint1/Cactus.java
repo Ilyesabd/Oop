@@ -5,13 +5,13 @@ public class Cactus extends Plant implements Food {
         super(name, height);
 
     }
-    public double Liquidneeded = 0.02;
+    private double Liquidneeded = 0.02;
 
     @Override
     public double getLiquidNeeded() {
         return Liquidneeded;
     }
-String LiquidType = "Mineralvatten";
+private String LiquidType = "Mineralvatten";
     @Override
     public String getLiquidType() {
         return LiquidType;

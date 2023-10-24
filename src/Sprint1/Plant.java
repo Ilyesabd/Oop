@@ -19,11 +19,11 @@ abstract class Plant implements Food{
         return height;
     }
 
-    // En metod som beräknar näringsbehovet baserat på växtens höjd och det implementerade näringsinterfacet
 
     public void calculateFood(Food f) {
         double liquidRequirement = getLiquidNeeded();
         String liquidType = f.getLiquidType();
+        System.out.println("lq "+liquidType);
         String info = (getName() + " ska få " + liquidRequirement + " liter " + liquidType + " per dag.");
         JOptionPane.showMessageDialog(null, info);
     }
